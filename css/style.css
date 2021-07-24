@@ -32,8 +32,6 @@ h3 {
     color: #000;
 }
 
-
-
 /*-- header --*/
 .main-header {
     background-image: url(../img/header.jpg);
@@ -54,7 +52,6 @@ h3 {
     border-bottom: 2px solid transparent;
     padding: 40px 20px;
     display: block;
-
 }
 
 .main-menu a:hover {
@@ -65,10 +62,6 @@ a {
     color: #FFF;
     text-decoration: none;
 }
-
-/* .main-menu li+li {
-    margin-left: 40px;
-} */
 
 .main-header h1 {
     font-weight: 500;
@@ -89,8 +82,7 @@ a {
 
 .main-header div {
     padding: 0;
-    margin-bottom: 335px;
-    margin-top: 218px;
+    margin-top: 150px;
 }
 
 hr {
@@ -122,16 +114,19 @@ hr {
 .services-text {
     width: 730px;
     display: inline-block;
-    margin: 50px 0 70px 0;
+    margin: 50px 0 0 0;
 }
 
 .sites {
     display: flex;
     justify-content: space-around;
+    padding: 0;
+    margin: 0;
 }
 
 .sites li {
     display: flex;
+    padding-top: 70px;
 }
  
 .sites div {
@@ -153,12 +148,6 @@ hr {
 .sites h3 {
     padding-top: 40px;
 }
-
-
-/* .sites-text {
-    padding-left: 17px;
-} */
-
 
 .border {
     border: 1px solid #4985FF;
@@ -231,18 +220,14 @@ hr {
 .icon-text {
     margin-bottom: 70px;
 }
-
 /*-- !standarts --*/
 
 
 /*-- our-works --*/
 .worksss {
     background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%) 0 0 / 100% 50% no-repeat, #fff;
-    /* background: linear-gradient(to bottom, #5F12D0 50%, white 50%); */
-    /* background: linear-gradient(to left #504DC2 20.44%, #5F12D0 80.91%) 0 0 / 50% 100%,  #C4C4C4; */
-
 }
-   
+
 .our-works {
     padding-top: 100px;
     padding-bottom: 85px;
@@ -269,8 +254,6 @@ hr {
 }
 
 .our-works-items {
-    /* display: flex;
-    justify-content: space-around; */
     display: inline-flex;
     margin: 0;
     padding: 0;
@@ -413,9 +396,7 @@ form {
     display: flex;
     max-width: 489px;
     margin: 0 auto;
-
 }
-
 
 .email {
     width: 300px;
@@ -446,11 +427,6 @@ form {
     color: #FFF;
     box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
 }
-
-
-
-
-
 
 
 footer {
@@ -505,3 +481,353 @@ footer hr {
     color: #999;
     margin-top: 30px;
 }
+
+
+@media (max-width: 1150px) {
+    .container {
+        max-width: 950px;
+        margin: 0 auto;
+    }
+    .standarts-content-img {
+        margin-left: 20px;
+    }
+    .our-projects-content {
+        margin: 0 20px;
+    }
+    .sites {
+        flex-wrap: wrap;
+    }
+    .services-text {
+        width: 530px;
+        margin-bottom: 0;
+    }
+    .our-projects-content {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .our-projects-links li+li {
+        padding-left: 30px;
+    } 
+    .our-works-item {
+        margin-bottom: 40px;
+    }
+    .worksss {
+        max-height: 900px;
+    }
+    .our-works {
+        padding-top: 80px;
+        padding-bottom: 55px;
+    }
+}
+
+    
+@media (max-width: 992px) {
+    .container {
+        max-width: 760px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .main-menu a {
+        font-size: small;
+        padding: 20px 20px;
+    }
+    .main-header p {
+        font-weight: 600;
+        font-size: 34px;
+        width: 560px;
+        line-height: 42px;
+    }
+    .services h2,
+    .services-text {
+        width: 600px;
+    }
+    .standarts-content {
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+    }
+    .standarts-content-text {
+        width: 100%;
+        text-align: center;
+    }
+    .standarts-content-text a {
+        font-weight: 400;
+        line-height: 16px;
+        font-size: small;
+    }
+    .standarts-content-img {
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .icon-list li+li {
+        padding-left: 35px;
+    }
+    .icon-number {
+        font-size: 32px;
+        margin-left: 15px;
+    }
+    .sites li+li {
+        padding-left: 0;
+    }
+    .contacts div {
+        padding-left: 20px;
+    }
+    .contacts li+li {
+        margin-top: 15px;
+    }
+    .contacts h3 {
+        text-align: left;
+    }
+    .our-projects-links {
+        margin: 0 30px 30px 30px;
+    }
+    .worksss {
+        background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%) 0 0 / 100% 40% no-repeat, #fff;
+        }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 560px;
+    } 
+    .main-menu a {
+        padding: 12px 10px;
+    }
+    .icon-number {
+        font-size: 25px;
+        margin-left: 6px;
+    }
+    .icon-text {
+        margin-bottom: 50px;
+        font-size: x-small;
+    }
+    .icon-list div {
+        margin: 50px 0 8px 0;
+    }
+    .our-projects-content {
+        padding: 60px 0 70px 0;
+    }
+    .our-projects-content h2 {
+        font-size: 30px;
+        line-height: 42px;
+    }
+    .our-projects-content p {
+        width: 530px;
+    }
+    .our-projects-links li+li {
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+    .about-work-content h2 {
+        font-size: 30px;
+        line-height: 42px;
+    }
+    .our-works {
+        padding-top: 60px;
+        padding-bottom: 65px;
+    }  
+    .our-works-content h2 {
+        font-size: 30px;
+        line-height: 42px;
+    }
+    .our-works-item img {
+        margin-top: 40px;
+    }
+    .our-works-item a {
+        font-weight: 400;
+        line-height: 16px;
+        font-size: small;
+    }    
+    .services h2,
+    .services-text {
+        width: 450px;
+    }
+    .services h2 {
+        margin-top: 60px;
+        font-size: 30px;
+        line-height: 42px;
+    }
+    .standarts-content {
+        padding: 60px 0 50px 0;
+    }
+    .standarts-content-text h2 {
+        font-size: 30px;
+        line-height: 42px;
+    }
+    .worksss {
+        background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%) 0 0 / 100% 40% no-repeat, #fff;
+    }
+    .our-works-content {
+        flex-wrap: wrap;
+    }
+    .our-works-content h2 {
+        text-align: center;
+    }
+    .our-works-content a  {
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .our-works-items p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .our-projects-links {
+        flex-wrap: wrap;
+    }
+    .our-projects-links li {
+        margin: 0 auto;
+    }
+    .our-projects-links li+li {
+        padding-bottom: 0;
+    }
+    .point,
+    .point1 {
+        font-size: xx-small;
+    }
+    .contacts li+li {
+        margin-top: 5px;
+    }
+    .services-content a {
+        margin: 40px 0 65px 0;    
+    }
+}
+
+
+@media (max-width: 576px) {
+    .container {
+        width: 95%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .main-menu a {
+        font-size: xx-small;
+        padding: 4px 3px;
+    }
+    body {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .main-header p {
+        font-weight: 600;
+        font-size: 24px;
+        width: 290px;
+        line-height: 32px;
+    }
+    h3 {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .services-content {
+        padding: 0;
+    }
+    .services h2,
+    .services-text {
+        width: 270px;
+    }
+    .services h2 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .sites li p {
+        font-size: 10px;
+        line-height: 18px;
+        width: 160px;
+    }
+    .standarts-content-text h2 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .icon-list {
+        flex-wrap: wrap;
+    }
+    .icon-text {
+        margin-bottom: 20px;
+    }
+    .icon-list div {
+        margin: 20px 0 8px 0;
+    }
+    .icon-list li+li {
+        padding-left: 25px;
+    }
+    .worksss {
+        max-height: 2000px; background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%) 0 0 / 100% 20% no-repeat, #fff;
+    }
+    .our-works-content h2 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .our-works-items {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .our-works-item {
+        text-align: center;
+    }
+    .our-works-items li+li {
+        margin-left: 0;
+    }
+    .our-works-items li {
+        margin-bottom: 0;
+    }
+    .our-works-item img,
+    .our-works-item h3,
+    .our-works-item p {
+        margin-bottom: 10px;
+    }
+    .our-works-items p {
+        font-size: 10px;
+        line-height: 18px;
+    }
+    .our-projects-content h2 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .our-projects-content p {
+        width: 290px;
+    }
+    .about-work-content {
+        padding-top: 50px;
+    }
+    .about-work-content h2 {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+    .about-work-content p {
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 30px;
+    }
+       .mailing {
+        padding-top: 85px;
+    }
+    .spam {
+        font-size: 11px;
+        line-height: 18px;
+    }
+    form {
+        max-width: 290px;    
+    }
+    ::placeholder {
+        font-size: 10px;
+        line-height: 16px;  
+    }
+    .mailing-batton {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .contacts {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .contacts h3 {
+        margin-bottom: 15px;
+        margin-top: 20px;
+    }
+    footer {
+        padding-top: 0;
+    }
+}
+
