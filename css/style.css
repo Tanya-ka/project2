@@ -56,6 +56,7 @@ h3 {
 
 .main-menu a:hover {
     border-bottom: 2px solid #FFF;
+    transition: 1s;
 }
 
 a {
@@ -96,6 +97,12 @@ hr {
     border-radius: 30px;
     padding: 13px 36px 15px 36px;
     display: inline-block;
+    transition: transform 2s ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.2);
+    
 }
 /*-- !header --*/
 
@@ -510,9 +517,6 @@ footer hr {
     } 
     .our-works-item {
         margin-bottom: 40px;
-    }
-    .worksss {
-        max-height: 900px;
     }
     .our-works {
         padding-top: 80px;
